@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Lingkungan Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HALAMAN LOGIN -->
+<div class="container" id="loginPage">
+    <div class="ornament">🌳 🌲 🌿</div>
+
+    <h1 class="title green">
+        LINGKUNGAN SEHAT<br>
+        CERMINAN HATI
+    </h1>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <div class="ornament">🌿 🌲 🌳</div>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="container hidden" id="homePage">
+    <h1 class="title">Lingkungan Kotor</h1>
+
+    <!-- GAMBAR LINGKUNGAN KOTOR -->
+    <img src="https://via.placeholder.com/420x240?text=Lingkungan+Kotor"
+         alt="Lingkungan Kotor"
+         class="environment-image">
+
+    <!-- DESKRIPSI EDUKASI SOSIAL DAMPAK -->
+    <p class="description">
+        Lingkungan yang kotor dapat menimbulkan berbagai dampak negatif bagi
+        kehidupan manusia dan alam. Sampah yang menumpuk dapat menjadi sumber
+        penyakit, menyebabkan banjir, serta merusak ekosistem. Dengan memanfaatkan
+        <b>teknologi Artificial Intelligence (AI)</b> dalam klasifikasi lingkungan,
+        kondisi lingkungan yang kotor dapat dikenali lebih cepat sehingga
+        tindakan pembersihan menggunakan alat kebersihan yang tepat dapat segera
+        dilakukan. Edukasi sosial ini bertujuan untuk meningkatkan kesadaran
+        masyarakat agar lebih peduli terhadap kebersihan demi menciptakan
+        lingkungan yang sehat dan berkelanjutan.
+    </p>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<!-- HALAMAN LOGOUT -->
+<div class="container hidden" id="logoutPage">
+    <h1 class="title">Anda Telah Logout</h1>
+    <p class="description">
+        Terima kasih telah berpartisipasi dalam menjaga kebersihan dan
+        kelestarian lingkungan 🌱
+    </p>
+    <button onclick="backToLogin()">Login Kembali</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
